@@ -1,8 +1,6 @@
-let variable = true;
+const variable = true;
 
-function boolean() {
-    variable ? console.log('Yes') : console.log('no');
-}
+const boolean = (isTure) => isTure ? 'Yes' : 'no';
 
-
-boolean(variable = false);
+console.log(boolean(variable)) //return Yes
+console.log(boolean(!variable)) // return no
